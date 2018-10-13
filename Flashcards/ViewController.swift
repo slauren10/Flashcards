@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var frontLabel: UILabel!
+    @IBOutlet weak var backLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +23,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func didTapOnFlashcard(_ sender: Any) {
+        frontLabel.isHidden = true
+    }
+    
+    
 }
 
